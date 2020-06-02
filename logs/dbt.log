@@ -1,0 +1,60 @@
+2020-06-02 16:37:20.180929 (MainThread): Done resetting log handlers.
+2020-06-02 16:37:20.180960 (MainThread): Received response from rpc task.
+2020-06-02 16:37:20.180983 (MainThread): Updating status to Paused
+2020-06-02 16:41:19.358874 (MainThread): Caught sighup
+2020-06-02 16:41:19.428317 (MainThread): Updating status to Ready
+2020-06-02 16:41:19.435732 (MainThread): Kicking off rpc task.
+2020-06-02 16:41:19.435792 (MainThread): dbt client called with ['--partial-parse', 'rpc', '--profile', 'user']
+2020-06-02 16:41:19.437447 (MainThread): Setting up log handlers...
+2020-06-02 16:41:19.448328 (MainThread): Running with dbt=0.16.1
+2020-06-02 16:41:19.599612 (MainThread): running dbt with arguments Namespace(cls=<class 'dbt.task.rpc.server.RPCServerTask'>, debug=False, exclude=None, host='0.0.0.0', log_cache_events=False, log_format='default', models=None, partial_parse=True, port=8580, profile='user', profiles_dir='/usr/src/develop/.dbt', project_dir=None, record_timing_info=None, rpc_method=None, single_threaded=False, strict=False, target=None, test_new_parser=False, threads=None, use_cache=True, vars='{}', version_check=True, warn_error=False, which='rpc', write_json=True)
+2020-06-02 16:41:19.622699 (Thread-1): Parsing macros/core.sql
+2020-06-02 16:41:19.627615 (Thread-1): Parsing macros/adapters/common.sql
+2020-06-02 16:41:19.653373 (MainThread): Tracking: tracking
+2020-06-02 16:41:19.653518 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f0019d4f4e0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f0008f09c50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f0008ef34a8>]}
+2020-06-02 16:41:19.653751 (MainThread): Serving RPC server at 0.0.0.0:8580, pid=13
+2020-06-02 16:41:19.659267 (MainThread): Supported methods: ['cli_args', 'compile', 'compile_sql', 'deps', 'docs.generate', 'gc', 'kill', 'poll', 'ps', 'run', 'run-operation', 'run_sql', 'seed', 'snapshot', 'snapshot-freshness', 'status', 'test']
+2020-06-02 16:41:19.674251 (MainThread): Send requests to http://localhost:8580/jsonrpc
+2020-06-02 16:41:19.674899 (Thread-1): Parsing macros/schema_tests/unique.sql
+2020-06-02 16:41:19.676290 (Thread-1): Parsing macros/schema_tests/accepted_values.sql
+2020-06-02 16:41:19.678449 (Thread-1): Parsing macros/schema_tests/not_null.sql
+2020-06-02 16:41:19.679390 (Thread-1): Parsing macros/schema_tests/relationships.sql
+2020-06-02 16:41:19.680652 (Thread-1): Parsing macros/materializations/helpers.sql
+2020-06-02 16:41:19.690113 (Thread-2): handling status request
+2020-06-02 16:41:19.690299 (Thread-1): Parsing macros/materializations/common/merge.sql
+2020-06-02 16:41:19.690701 (Thread-2): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'ad70fd45-25bf-4d9a-86e1-aaa70c321500', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f0008f21ef0>]}
+2020-06-02 16:41:19.703669 (Thread-2): sending response (<Response 183 bytes [200 OK]>) to 10.0.43.166
+2020-06-02 16:41:19.707662 (Thread-1): Parsing macros/materializations/table/table.sql
+2020-06-02 16:41:19.716181 (Thread-1): Parsing macros/materializations/incremental/incremental.sql
+2020-06-02 16:41:19.725260 (Thread-1): Parsing macros/materializations/incremental/helpers.sql
+2020-06-02 16:41:19.728278 (Thread-1): Parsing macros/materializations/seed/seed.sql
+2020-06-02 16:41:19.752618 (Thread-1): Parsing macros/materializations/snapshot/strategies.sql
+2020-06-02 16:41:19.770710 (Thread-1): Parsing macros/materializations/snapshot/snapshot.sql
+2020-06-02 16:41:19.808478 (Thread-1): Parsing macros/materializations/snapshot/snapshot_merge.sql
+2020-06-02 16:41:19.810574 (Thread-1): Parsing macros/materializations/view/view.sql
+2020-06-02 16:41:19.816780 (Thread-1): Parsing macros/materializations/view/create_or_replace_view.sql
+2020-06-02 16:41:19.821910 (Thread-1): Parsing macros/etc/get_custom_schema.sql
+2020-06-02 16:41:19.824230 (Thread-1): Parsing macros/etc/is_incremental.sql
+2020-06-02 16:41:19.826025 (Thread-1): Parsing macros/etc/get_custom_database.sql
+2020-06-02 16:41:19.827115 (Thread-1): Parsing macros/etc/datetime.sql
+2020-06-02 16:41:19.836385 (Thread-1): Parsing macros/etc/get_relation_comment.sql
+2020-06-02 16:41:19.838534 (Thread-1): Parsing macros/etc/query.sql
+2020-06-02 16:41:19.839618 (Thread-1): Parsing macros/etc/get_custom_alias.sql
+2020-06-02 16:41:19.840935 (Thread-1): Parsing macros/catalog.sql
+2020-06-02 16:41:19.847911 (Thread-1): Parsing macros/etc.sql
+2020-06-02 16:41:19.848586 (Thread-1): Parsing macros/adapters.sql
+2020-06-02 16:41:19.870940 (Thread-1): Parsing macros/materializations/view.sql
+2020-06-02 16:41:19.872447 (Thread-1): Parsing macros/materializations/incremental.sql
+2020-06-02 16:41:19.885192 (Thread-1): Parsing macros/materializations/table.sql
+2020-06-02 16:41:19.895081 (Thread-1): Parsing macros/materializations/seed.sql
+2020-06-02 16:41:19.897193 (Thread-1): Parsing macros/materializations/snapshot.sql
+2020-06-02 16:41:20.212114 (Thread-1): WARNING: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.my_new_project.example
+
+2020-06-02 16:41:20.981111 (Thread-3): handling status request
+2020-06-02 16:41:20.981638 (Thread-3): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'ad70fd45-25bf-4d9a-86e1-aaa70c321500', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f0008547be0>]}
+2020-06-02 16:41:20.985575 (Thread-3): sending response (<Response 9268 bytes [200 OK]>) to 10.0.5.102
+2020-06-02 16:41:26.775588 (Thread-4): handling status request
+2020-06-02 16:41:26.777292 (Thread-4): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'ad70fd45-25bf-4d9a-86e1-aaa70c321500', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f000a9d8a58>]}
+2020-06-02 16:41:26.781608 (Thread-4): sending response (<Response 9268 bytes [200 OK]>) to 10.0.5.102
